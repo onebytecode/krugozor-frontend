@@ -37,6 +37,12 @@ const startServerToListen = function(port) {
     })
 }
 
-module.exports = {
-    run: startServerToListen
+module.exports = (root) => {
+    server.set('views', root)
+    server.set('view engine', 'pug')
+    server.use(require('./routes')(root))
+
+    return {
+        run: startServerToListen
+    }
 }
