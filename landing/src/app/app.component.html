@@ -3,4 +3,8 @@
     <img src="../assets/images/angular.png" alt="angular-img">
 </main>
 
-<section-component></section-component>
+<div *ngFor="let section of sections">
+    <section-component [section] = "section">
+        
+    </section-component>
+</div>

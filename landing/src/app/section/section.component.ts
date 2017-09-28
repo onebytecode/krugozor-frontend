@@ -1,4 +1,6 @@
-import { Component } from '@angular/core'
+import { Component, Input } from '@angular/core'
+
+import { Section } from './section'
 
 @Component({
     selector: 'section-component',
@@ -6,6 +8,12 @@ import { Component } from '@angular/core'
     styleUrls: [
         './section.component.css'
     ]
-}) export class SectionComponent {
+}) 
+export class SectionComponent {
+    @Input() 
+    section: Section 
 
+    constructor() {
+        
+    }
 }
