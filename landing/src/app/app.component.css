@@ -1,17 +1,7 @@
 :host {
-  width: 100%;
-  display: block;
+    height: 100%;
+    width: 100%;
 }
-
-main {
-    padding: 1em;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    margin-top: 50px;
-    display: block;
-  }
-
-main img {
-  max-height: 48px;
+.sections {
+    margin-top: 56px;
 }
-

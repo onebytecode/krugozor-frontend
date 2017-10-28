@@ -1,10 +1,5 @@
-<main>
-    <h1>Hello from angular webpack!</h1>
-    <img src="../assets/images/angular.png" alt="angular-img">
-</main>
-
-<div *ngFor="let section of sections">
-    <section-component [section] = "section">
-        
-    </section-component>
+<app-header></app-header>
+<div class="sections">
+    <app-section [sectionNumber]="1" ></app-section>
+    <app-section [sectionNumber]="2" ></app-section>
 </div>

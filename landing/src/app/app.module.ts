@@ -1,18 +1,20 @@
+import { SectionModule } from './section/section.module';
+import { HeaderModule } from './header/header.module';
+import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { BrowserModule }  from '@angular/platform-browser';
 
-// Components declaration
 import { AppComponent } from './app.component';
-import { SectionComponent } from './section/section.component'
 
 @NgModule({
-  imports: [
-    BrowserModule
-  ],
   declarations: [
-    AppComponent,
-    SectionComponent
+    AppComponent
   ],
-  bootstrap: [ AppComponent ]
+  imports: [
+    BrowserModule,
+    HeaderModule,
+    SectionModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
