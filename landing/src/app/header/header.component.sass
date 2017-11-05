@@ -1,2 +1,39 @@
 \:host
     position: relative
+
+header
+  display: grid
+  grid-template-columns: 10% 1fr 20%
+  grid-template-areas: "title central auth"
+  height: 56px
+  width: 100%
+  padding: 0 12px
+  background-color: #b6d9f7
+  position: relative
+  top: 0
+  left: 0
+  right: 0
+  .title
+    margin: 0
+    font-size: 2em
+    grid-area: title
+    align-self: center
+  .auth
+    grid-area: auth
+    margin: 0
+    justify-content: center
+    align-self: center
+    .button
+      border: 1px solid black
+      float: left
+      width: auto
+      border-radius: 15px
+      padding: 2.5px 5px
+      margin-left: 5px
+      cursor: pointer
+    .entry
+      transition: all ease-in 50ms
+      &:hover
+        transform: scale(1.05)
+        margin: 0 10px
+
